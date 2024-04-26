@@ -1,0 +1,22 @@
+{
+    "id": 1,
+    "name": "en",
+    "entries": [
+        {
+            "key": "name",
+            "value": "English"
+        },
+        {
+            "key": "btn_play",
+            "value": "Play"
+        },
+        {
+            "key": "btn_quit",
+            "value": "Quit"
+        },
+        {
+            "key": "btn_menu",
+            "value": "Return to menu"
+        }
+    ]
+}

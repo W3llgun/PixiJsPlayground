@@ -1,0 +1,22 @@
+{
+    "id": 0,
+    "name": "fr",
+    "entries": [
+        {
+            "key": "name",
+            "value": "Français"
+        },
+        {
+            "key": "btn_play",
+            "value": "Jouer"
+        },
+        {
+            "key": "btn_quit",
+            "value": "Quitter"
+        },
+        {
+            "key": "btn_menu",
+            "value": "Retour au menu"
+        }
+    ]
+}

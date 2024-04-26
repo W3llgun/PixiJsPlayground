@@ -1,0 +1,129 @@
+{
+    "bundles": [
+        {
+            "name": "game",
+            "assets": [
+                {
+                    "alias": "background",
+                    "src": "/assets/bg.png"
+                },
+                {
+                    "alias": "block",
+                    "src": "/assets/ui/future/glassPanel_corners.png"
+                },
+                {
+                    "alias": "pixel",
+                    "src": "/assets/pixel.png"
+                }
+            ]
+        },
+        {
+            "name": "brickbreaker",
+            "assets": [
+                {
+                    "alias": "background",
+                    "src": "/assets/prototype/Orange/texture_02.png"
+                },
+                {
+                    "alias": "block",
+                    "src": "/assets/ui/future/glassPanel_corners.png"
+                },
+                {
+                    "alias": "pixel",
+                    "src": "/assets/pixel.png"
+                },
+                {
+                    "alias": "ball",
+                    "src": "/assets/pixel.png"
+                }
+            ]
+        },
+        {
+            "name": "mainmenu",
+            "assets": [
+                {
+                    "alias": "background",
+                    "src": "/assets/prototype/Dark/texture_02.png"
+                },
+                {
+                    "alias": "mainbutton",
+                    "src": "/assets/ui/future/glassPanel.png"
+                }
+            ]
+        },
+        {
+            "name": "loading",
+            "assets": [
+                {
+                    "alias": "background",
+                    "src": "/assets/prototype/Red/texture_02.png"
+                }
+            ]
+        },
+        {
+            "name": "sidepanel",
+            "assets": [
+                {
+                    "alias": "background",
+                    "src": "/assets/prototype/Dark/texture_01.png"
+                },
+                {
+                    "alias": "pixel",
+                    "src": "/assets/pixel.png"
+                },
+                {
+                    "alias": "mainbutton",
+                    "src": "/assets/ui/future/glassPanel.png"
+                },
+                {
+                    "alias": "block",
+                    "src": "/assets/ui/future/glassPanel_corners.png"
+                }
+            ]
+        },
+        {
+            "name": "global",
+            "assets": [
+                {
+                    "alias": "explosion",
+                    "src": "https://pixijs.com/assets/spritesheet/mc.json"
+                },
+                {
+                    "alias": "missing",
+                    "src": "/assets/missing.png"
+                }
+            ]
+        },
+        {
+            "name": "fonts",
+            "assets": [
+                {
+                    "alias": "kenvector_future",
+                    "src": "/assets/fonts/kenvector_future.ttf"
+                },
+                {
+                    "alias": "kenvector_future_thin",
+                    "src": "/assets/fonts/kenvector_future_thin.ttf"
+                }
+            ]
+        },
+        {
+            "name": "lg_fr",
+            "assets": [
+                {
+                    "alias": "file",
+                    "src": "/assets/languages/fr.json"
+                }
+            ]
+        },
+        {
+            "name": "lg_en",
+            "assets": [
+                {
+                    "alias": "file",
+                    "src": "/assets/languages/en.json"
+                }
+            ]
+        }
+    ]
+}
