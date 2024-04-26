@@ -1,5 +1,3 @@
-# 2d infinite runner html5 game
+# My PixiJS test project
 
-Tutorial: https://gamedev.land/runner/
-
-Preview demo: https://gamedevland.github.io/runner/
+Game assets thank to kenney.nl
