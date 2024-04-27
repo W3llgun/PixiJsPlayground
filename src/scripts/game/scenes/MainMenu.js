@@ -56,7 +56,7 @@ export class MainMenu extends Scene {
     }
 
     createMenu() {
-        this.startButton = new Button(App.app.screen.width / 2, App.app.screen.height - 400, 400, 100, {
+        this.startButton = new Button(App.pwidth(50), App.pheight(50), 400, 100, {
             texture: undefined,
             normalColor: '#5fb0fc',
             hoverColor: '#067cea',

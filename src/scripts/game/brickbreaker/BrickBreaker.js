@@ -20,6 +20,7 @@ export class BrickBreaker extends Scene {
         this.ballLeft = 4;
         this.maxCombo = 15;
         this.balls = [];
+        this.blocks = [];
 
         this.ballSize = App.pwidth(1);
         this.maxX = App.width() - (this.ballSize / 2);
@@ -75,6 +76,8 @@ export class BrickBreaker extends Scene {
                 const block = new BB_Block(startWidth + (widthStep * columnIndex), height, size, this.assets.block);
                 columnIndex++;
                 this.addElement(block);
+
+                this.blocks.push(block);
             }
         }
     }
@@ -91,6 +94,7 @@ export class BrickBreaker extends Scene {
 
         ball.init((Math.random() * 2) - 1, -2);
         this.addElement(ball);
+
         this.balls.push(ball);
     }
 
@@ -198,7 +202,9 @@ export class BrickBreaker extends Scene {
         this.balls.forEach(b => {
             b.destroy();
         });
-
+        this.blocks.forEach(b => {
+            b.destroy();
+        });
         //Matter.Composite.remove(App.physics.world, this.wallLeft);
         //Matter.Composite.remove(App.physics.world, this.wallRight);
         //Matter.Composite.remove(App.physics.world, this.wallTop);
