@@ -1,4 +1,3 @@
-import { Tools } from "../system/Tools";
 import { BrickBreaker } from "./brickbreaker/BrickBreaker";
 import { GameScene } from "./scenes/GameScene";
 import { MainMenu } from "./scenes/MainMenu";
@@ -57,10 +56,6 @@ export const Config = {
         "MainMenu": MainMenu,
         "SideMenu": SideMenu,
         "BrickBreaker": BrickBreaker
-    },
-    fontNames:
-    {
-        "Future": "kenvector future",
-        "FutureThin": "kenvector future thin",
     }
+
 };

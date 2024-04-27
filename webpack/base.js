@@ -18,7 +18,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|mp3|jpe?g|json|ttf)$/i,
+        test: /\.(png|mp3|jpe?g|json|ttf|css)$/i,
         use: "file-loader"
       }
     ]
@@ -34,9 +34,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./index.html"
     }),
-    new CopyPlugin ({
+    new CopyPlugin({
       patterns: [
-        {from: "src/assets", to: "assets"},
+        { from: "src/assets", to: "assets" },
       ],
     })
   ]

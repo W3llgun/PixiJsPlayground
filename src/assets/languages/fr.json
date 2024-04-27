@@ -17,6 +17,10 @@
         {
             "key": "btn_menu",
             "value": "Retour au menu"
+        },
+        {
+            "key": "btn_portfolio",
+            "value": "Portfolio"
         }
     ]
 }

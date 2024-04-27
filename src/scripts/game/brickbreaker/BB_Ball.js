@@ -10,7 +10,7 @@ export class BB_Ball {
 
         this.createSprite(x, y, size, texture);
         this.createBody(x, y, size);
-
+        this.speed = 2;
         this.container.x = x;
         this.container.y = y;
         // this.container.width = size;
@@ -41,6 +41,7 @@ export class BB_Ball {
 
     createBody(x, y, size) {
         this.body = Matter.Bodies.circle(x, y, size / 2, { density: 1, inertia: Infinity, friction: 0, frictionStatic: 0, restitution: 1, frictionAir: 0, isStatic: false, render: { fillStyle: '#060a19' } });
+
         // ball is sensor because physic bouncing with resitution 1 is bugged and inconsistant. Not what is expected for a brickbreaker
         this.body.isSensor = true;
         this.body.ball = this;
@@ -54,7 +55,9 @@ export class BB_Ball {
         }
     }
 
-    init() {
+    init(x, y) {
+        const vec = Matter.Vector.create(x, y);
+        this.velocity = Matter.Vector.mult(Matter.Vector.normalise(vec), this.speed);
         Matter.Body.setVelocity(this.body, this.velocity);
     }
 
@@ -72,7 +75,18 @@ export class BB_Ball {
             this.container.x = this.body.position.x;
             this.container.y = this.body.position.y;
         }
+    }
 
+
+    bumpFromAny(bumper) {
+
+        this.velocity = Matter.Vector.sub(this.body.position, bumper.position);
+        this.velocity = Matter.Vector.mult(Matter.Vector.normalise(this.velocity), this.speed);
+    }
+
+    bumpFromPlayer(playerBody) {
+        this.setVelocityYNeg();
+        this.pushX(playerBody.velocity.x * 0.15);
     }
 
     setVelocityXNeg() {
@@ -88,10 +102,10 @@ export class BB_Ball {
     setVelocityYNeg() {
         if (this.velocity.y > 0) this.velocity.y *= -1;
     }
-    pushX(forceX) {
-        forceX = Math.min(Math.max(forceX, -5), 5)
-        this.velocity.x *= 2;
-        this.velocity.y *= 2;
-        this.velocity.x += forceX;
+
+    pushX(gripForce) {
+        gripForce = Math.min(Math.max(gripForce, -5), 5)
+        this.velocity.x += gripForce;
+        this.velocity = Matter.Vector.mult(Matter.Vector.normalise(this.velocity), this.speed);;
     }
 }

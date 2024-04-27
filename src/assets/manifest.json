@@ -5,15 +5,15 @@
             "assets": [
                 {
                     "alias": "background",
-                    "src": "/assets/bg.png"
+                    "src": "./assets/bg.png"
                 },
                 {
                     "alias": "block",
-                    "src": "/assets/ui/future/glassPanel_corners.png"
+                    "src": "./assets/missing.png"
                 },
                 {
                     "alias": "pixel",
-                    "src": "/assets/pixel.png"
+                    "src": "./assets/pixel.png"
                 }
             ]
         },
@@ -22,19 +22,19 @@
             "assets": [
                 {
                     "alias": "background",
-                    "src": "/assets/prototype/Orange/texture_02.png"
+                    "src": "./assets/prototype/Orange/texture_02.png"
                 },
                 {
                     "alias": "block",
-                    "src": "/assets/ui/future/glassPanel_corners.png"
+                    "src": "./assets/missing.png"
                 },
                 {
                     "alias": "pixel",
-                    "src": "/assets/pixel.png"
+                    "src": "./assets/pixel.png"
                 },
                 {
                     "alias": "ball",
-                    "src": "/assets/pixel.png"
+                    "src": "./assets/pixel.png"
                 }
             ]
         },
@@ -43,11 +43,11 @@
             "assets": [
                 {
                     "alias": "background",
-                    "src": "/assets/prototype/Dark/texture_02.png"
+                    "src": "./assets/prototype/Dark/texture_02.png"
                 },
                 {
                     "alias": "mainbutton",
-                    "src": "/assets/ui/future/glassPanel.png"
+                    "src": "./assets/missing.png"
                 }
             ]
         },
@@ -56,7 +56,7 @@
             "assets": [
                 {
                     "alias": "background",
-                    "src": "/assets/prototype/Red/texture_02.png"
+                    "src": "./assets/prototype/Red/texture_02.png"
                 }
             ]
         },
@@ -65,19 +65,19 @@
             "assets": [
                 {
                     "alias": "background",
-                    "src": "/assets/prototype/Dark/texture_01.png"
+                    "src": "./assets/prototype/Dark/texture_01.png"
                 },
                 {
                     "alias": "pixel",
-                    "src": "/assets/pixel.png"
+                    "src": "./assets/pixel.png"
                 },
                 {
                     "alias": "mainbutton",
-                    "src": "/assets/ui/future/glassPanel.png"
+                    "src": "./assets/missing.png"
                 },
                 {
                     "alias": "block",
-                    "src": "/assets/ui/future/glassPanel_corners.png"
+                    "src": "./assets/missing.png"
                 }
             ]
         },
@@ -90,7 +90,7 @@
                 },
                 {
                     "alias": "missing",
-                    "src": "/assets/missing.png"
+                    "src": "./assets/missing.png"
                 }
             ]
         },
@@ -99,11 +99,11 @@
             "assets": [
                 {
                     "alias": "kenvector_future",
-                    "src": "/assets/fonts/kenvector_future.ttf"
+                    "src": "./assets/fonts/kenvector_future.ttf"
                 },
                 {
                     "alias": "kenvector_future_thin",
-                    "src": "/assets/fonts/kenvector_future_thin.ttf"
+                    "src": "./assets/fonts/kenvector_future_thin.ttf"
                 }
             ]
         },
@@ -112,7 +112,7 @@
             "assets": [
                 {
                     "alias": "file",
-                    "src": "/assets/languages/fr.json"
+                    "src": "./assets/languages/fr.json"
                 }
             ]
         },
@@ -121,7 +121,7 @@
             "assets": [
                 {
                     "alias": "file",
-                    "src": "/assets/languages/en.json"
+                    "src": "./assets/languages/en.json"
                 }
             ]
         }

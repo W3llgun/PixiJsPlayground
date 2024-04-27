@@ -32,9 +32,8 @@ class Application {
         });
         document.body.appendChild(this.app.canvas);
 
-        await PIXI.Assets.init({ manifest: "/assets/manifest.json" });
-        this.scenesManager = new ScenesManager();
-        this.scenesManager.startLoading();
+        await PIXI.Assets.init({ manifest: "./assets/manifest.json" });
+
 
         this.fonts = await PIXI.Assets.loadBundle('fonts');
         this.globalAssets = await PIXI.Assets.loadBundle('global');
@@ -45,13 +44,16 @@ class Application {
 
         //const texture = await PIXI.Assets.load('/sprites/bg.png');
         //console.log(texture);
-
+        this.scenesManager = new ScenesManager();
+        this.scenesManager.startLoading();
 
         this.app.stage.interactive = true;
         this.app.stage.addChild(this.scenesManager.container);
 
         this.loca = new Localisation();
         await this.loca.loadFrench();
+
+
         // [06]
         this.createPhysics();
 
@@ -115,6 +117,22 @@ class Application {
     }
 
     screen() { return this.app.screen };
+
+    width() {
+        return this.app.screen.width;
+    }
+    height() {
+        return this.app.screen.height;
+    }
+
+    // percentage of width
+    pwidth(p) {
+        return this.width() * (p / 100);
+    }
+    // percentage of height
+    pheight(p) {
+        return this.height() * (p / 100);
+    }
 }
 
 export const App = new Application();

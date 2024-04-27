@@ -2,6 +2,7 @@ import * as PIXI from "pixi.js";
 import { App } from "./App";
 
 export class ScenesManager {
+
     constructor() {
         this.container = new PIXI.Container();
 
@@ -28,8 +29,12 @@ export class ScenesManager {
         this.scene = new App.config.scenes[scene]();
         this.sceneContainer.addChild(this.scene.container);
         await this.scene.create();
+        if (this.scene.noSidePanel) {
+            this.removeSideMenu();
+        } else {
+            this.createSideMenu();
+        }
 
-        this.createSideMenu();
         await this.endLoading();
     }
 
@@ -39,6 +44,10 @@ export class ScenesManager {
             this.sideMenu.create();
             this.frontContainer.addChild(this.sideMenu.container);
         }
+    }
+
+    hideShideMenu() {
+
     }
 
     removeSideMenu() {
